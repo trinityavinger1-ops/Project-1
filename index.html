@@ -1,76 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- IT 3203 Milestone 1: HTML research website -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="An introduction to HTML and how it structures websites.">
-  <title>HTML Essentials | Home</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="site-name" href="index.html">HTML Essentials</a>
-      <nav aria-label="Main navigation">
-        <ul class="nav-list">
-          <li><a aria-current="page" href="index.html">Home</a></li>
-          <li><a href="basics.html">HTML Basics</a></li>
-          <li><a href="forms-media.html">Forms &amp; Media</a></li>
-          <li><a href="concepts.html">Key Concepts</a></li>
-          <li><a href="references.html">References</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <title> All about HTML </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body,h1,h2,h3,h4,h5 {
+       font-family:"Karma",sans-serif
+}
+    .w3-bar-block .w3-bar-item {
+  padding:30px 
+    }
+  </style>
+<body> 
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
+style="display:none;z-index:4;width:50%;min-width:200px"
+id="mySidebar">
 
-  <main id="main-content" class="container">
-    <section class="hero">
-      <p class="eyebrow">IT 3203 · Project Milestone 1</p>
-      <h1>Understanding HTML</h1>
-      <p class="hero-text">HTML, or HyperText Markup Language, provides the structure and meaning of content on the web. Explore the basics, common elements, and useful learning resources in this student project.</p>
-      <a class="button-link" href="basics.html">Start learning</a>
-    </section>
+<a href="javascript:void(0)"
+onclick="w3_close()"
+class="w3-bar-item w3-button">
+Close Menu </a>
+    
+<a href="#HTML"
+onclick="w3_close()"
+class="w3-bar-item w3-button">
+HTML </a>
 
-    <section class="content-section">
-      <h2>What is HTML?</h2>
-      <p>HTML uses elements to organize content such as headings, paragraphs, links, images, lists, and forms. Browsers read HTML documents and display their content as web pages. HTML works alongside CSS for presentation and JavaScript for behavior.</p>
-      <figure class="code-figure">
-        <pre><code>&lt;h1&gt;Hello, web!&lt;/h1&gt;
-&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
-        <figcaption>A small example of HTML markup.</figcaption>
-      </figure>
-    </section>
-
-    <section class="content-section">
-      <h2>Key terms</h2>
-      <dl class="term-grid">
-        <div><dt>Element</dt><dd>A piece of HTML content, often made of a start tag, content, and end tag.</dd></div>
-        <div><dt>Tag</dt><dd>Markup in angle brackets that identifies an element.</dd></div>
-        <div><dt>Attribute</dt><dd>Additional information written in an element's start tag.</dd></div>
-        <div><dt>Semantic HTML</dt><dd>Elements that communicate the purpose of content, such as <code>&lt;nav&gt;</code> or <code>&lt;main&gt;</code>.</dd></div>
-      </dl>
-    </section>
-
-    <section class="content-section">
-      <h2>Table of contents</h2>
-      <ul class="link-list">
-        <li><a href="basics.html">HTML Basics</a> — document structure, tags, and attributes.</li>
-        <li><a href="forms-media.html">Forms and Multimedia</a> — collecting input and embedding media.</li>
-        <li><a href="concepts.html">Key Concepts</a> — core ideas to remember.</li>
-        <li><a href="references.html">References</a> — documentation and tutorials.</li>
-        <li><a href="about.html">About</a> — project and student introduction.</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>Class project for IT 3203. <a href="https://ksuweb.github.io/IT3203/">IT 3203 course site</a>.</p>
-      <p>&copy; <span class="placeholder">Replace with your name</span> · Educational project</p>
-    </div>
-  </footer>
+<a href= "#References"
+  onclick="w3_close()"
+  class="w3-bar-item w3-button">
+  References </a>
+    
+<a href="#about me"
+onclick="w3_close()"
+class="w3-bar-item w3-button">
+About me </a>
+  </nav>
 </body>
 </html>
